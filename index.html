@@ -3,7 +3,6 @@
     <head>
         <meta charset="uff-8">
         <link href="style.css" rel="stylesheet"/>
-        <script src="app.js"></script>
         <title>JavaScript DOM</title>
     </head>
     <body>
@@ -23,7 +22,7 @@
                 <ul>
                     <li>
                         <span class="name">Name of the Wind</span>
-                        <span class="delete">delete</span>
+                        <a class="delete" href="">delete</a>
                     </li>
                     <li>
                         <span class="name">The Wise Man's Fear</span>
@@ -40,9 +39,13 @@
                 </ul>
             </div>
             <form id="add-book">
+                <input type="checkbox" id="hide"/>
+                <label for = "hide">Hide All Books</label>
+                <br>
                 <input type="text" placeholder="Add a book..."/>
                 <button>Add</button>
             </form>
         </div>
+        <script src="app.js"></script>
     </body>
 </html>
